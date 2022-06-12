@@ -1,233 +1,436 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
 </head>
 <body onload="myFunction()">
-  <div id="loading"></div>
-  <section id="header">
+<div id="loading"></div>
+<section id="header">
     <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="#start"><h1><span>UMK</span>WMiI</h1></a>
+        <div class="nav-bar">
+            <div class="brand">
+                <a href="#start"><img src="logo.png" alt="logo"
+                                      style="padding: 10px; height:100px!important; width:auto!important"></a>
+            </div>
+            <div class="nav-list">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                <ul class="font-navbar">
+                    <li><a href="#project" data-after="Project">O PROJEKCIE</a></li>
+                    <li><a href="#team" data-after="Team">Nasz Zespół</a></li>
+                    <li><a href="#cron" data-after="Cron">Harmonogram</a></li>
+                    <li><a href="#project2" data-after="Docs">Dokumentacja</a></li>
+		    <li><a href="#docs" data-after="Docs">Pobierz</a></li>
+                    <li><a href="#contact" data-after="Contact">Kontakt</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#project" data-after="Project">O PROJEKCIE</a></li>
-            <li><a href="#team" data-after="Team">Nasz Zespół</a></li>
-            <li><a href="#cron" data-after="Cron">Harmonogram</a></li>
-            <li><a href="#docs" data-after="Docs">Dokumentacja</a></li>
-            <li><a href="#contact" data-after="Contact">Kontakt</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Start -->
-  <section id="start">
+</section>
+<!-- Start -->
+<section id="start" style="min-height: 100vh!important;">
     <div class="start container">
-      <div>
-        <h1>Rozpoznawanie  <span></span></h1>
-        <h1>języka <span></span></h1>
-        <h1>migowego <span></span></h1>
-      </div>
+        <div style="margin-top: 400px;">
+            <h1>Rozpoznawanie</h1>
+            <h1>języka </h1>
+            <h1><span>migowego</span></h1>
+        </div>
     </div>
-  </section>
-  <!-- Start -->
-<hr/>
-    <!-- Project-->
-    <section id="project">
-        <div class="project container">
-            <div class="section-title"><h1>O <span>Projekcie</span></h1></div>
-            <div class="project-items">
-              <h1>
-                Naszym produketm jest aplikacja do rozpoznawania języka migowego na podstawie technologi przechwytywania obrazu AR z wykorzystaniem sztucznej inteligencji.
-                Możliwości o szerokim zastosowaniu w pracy ze studentami głuchoniemymi. </h1>
-              <h1>
-                Dodatkową funkcjonalnością jest nauka języka migowego dzięki materiałom zawartym  w aplikacji. 
-              </h1>
-            </div>
-      </div>
-    </section>
-    <hr/>
-  <!-- Team -->
-  <section id="team">
+</section>
+<!-- Start -->
+<!-- Project-->
+<section id="project">
+    <div class="project container">
+        <div class="section-title"><h1>O <span>Projekcie</span></h1></div>
+        <div class="project-items">
+            <p>
+                Pomysł na projekt pojawił się w głowach studentów UMK pod koniec 2021 roku.
+                Studenci kierunku informatyki pod okiem dr Marty Burzańskiej realizowali program w 6-cio osobowym zespole.
+            </p>
+            <p>
+                Za cel tworzonej aplikacji postawiono ułatwienie kontaktu między osobami głuchoniemymi a osobami nie znającymi języka migowego.
+                W szczególności kładąc nacisk na czynności związane z bezpośrednią obsługą klienta.
+            </p>
+        </div>
+    </div>
+</section>
+<!-- Team -->
+<section class="bg-cream" id="team">
+
     <div class="team container">
-      <div class="team-top">
-        <h1 class="section-title">N<span>asz </span> Z<span>espół</span></h1>
-        <p> Zespół wyselekcjonawany ze szwajcarską precyzją.</p>
-      </div>
-      <div class="team-bottom">
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum4.png"/>
-            </div>
-            <h2>Marta Burzańska</h2>
-            <p>Opiekun Zespołu
-            </p>
+        <div class="cron-header">
+            <h1 class="section-title" style="color:#fff">Nasz <span>zespół</span></h1>
         </div>
+        <div class="team-top">
+            <p> Zespół wyselekcjonawany ze szwajcarską precyzją.</p>
+        </div>
+        <div class="team-bottom">
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum4.png"/>
+                </div>
+                <h2>Marta <br> Burzańska</h2>
+                <p>Opiekun Zespołu
+                </p>
+            </div>
 
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum2.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum2.png"/>
+                </div>
+                <h2>Maksymilian Rękawek</h2>
+                <p>Kierownik Zespołu
+                </p>
             </div>
-            <h2>Maksymilian Rękawek</h2>
-            <p>Kierownik Zespołu
-            </p>
-        </div>
 
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum1.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum1.png"/>
+                </div>
+                <h2>Michał Gulczyński</h2>
+                <p>
+                    Członek Zespołu
+                </p>
             </div>
-            <h2>Michał Gulczyński</h2>
-            <p>
-            Członek Zespołu
-            </p>
-        </div>
 
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum1.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum1.png"/>
+                </div>
+                <h2>Szymon <br> Smolik </h2>
+                <p>
+                    Członek Zespołu
+                </p>
             </div>
-            <h2>Szymon Smolik </h2>
-            <p>
-                Członek Zespołu
-            </p>
-        </div>
 
-        <div class="team-item">
-            <div class="icon">
-                <img src="./hum1.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum1.png"/>
+                </div>
+                <h2>Karol Wróblewski</h2>
+                <p>
+                    Członek Zespołu
+                </p>
             </div>
-            <h2>Karol Wróblewski</h2>
-            <p>
-              Członek Zespołu
-            </p>
-        </div>
 
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum1.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum1.png"/>
+                </div>
+                <h2>Hubert Nowakowski</h2>
+                <p>Członek Zespołu
+                </p>
             </div>
-            <h2>Hubert Nowakowski</h2>
-            <p>Członek Zespołu
-            </p>
-        </div>
 
-        <div class="team-item">
-            <div class="icon">
-              <img src="./hum1.png"/>
+            <div class="team-item">
+                <div class="icon">
+                    <img src="./hum1.png"/>
+                </div>
+                <h2>Piotr <br>Kulig</h2>
+                <p>Członek Zespołu
+                </p>
             </div>
-            <h2>Piotr Kulig</h2>
-            <p>Członek Zespołu
-            </p>
         </div>
-      </div>
     </div>
-  </section>
-  <!-- Team -->
-<hr/>
+</section>
+<!-- Team -->
 
-  <!-- Cron -->
-  <section id="cron">
+<!-- Cron -->
+<section class="bg-white" id="cron">
     <div class="cron container">
-      <div class="cron-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-cron">
-        <div class="cron-item">
-          <div class="cron-info">
-            <h1>Termin 1</h1>
-            <h2>10.12.2021</h2>
-            <p>
-              Spotkanie w sprawie ustalenia tematu pracy
-            </p>
-          </div>
-          
-          <div class="cron-img">
-            <img src="https://cdn.pixabay.com/photo/2016/07/13/23/09/work-1515801_960_720.jpg" alt="img">
-          </div>
+        <div class="cron-header">
+            <h1 class="section-title">Harmonogram <span>pracy</span></h1>
         </div>
-        <div class="cron-item">
-          <div class="cron-info">
-            <h1>Termin 2</h1>
-            <h2>03.01.2022</h2>
-            <p>Wykonanie wstępnych projektów i ustalenie dalszej ściezki prac</p>
-          </div>
-          <div class="cron-img">
-            <img src="https://cdn.pixabay.com/photo/2016/07/13/23/09/work-1515801_960_720.jpg" alt="img">
-          </div>
+        <div class="all-cron">
+            <div class="cron-item">
+                <div class="cron-info">
+                    <h1>Termin 1</h1>
+                    <h2>10.12.2021</h2>
+                    <p>
+                    <p>
+                        Burza mózgów w kwestii znalezienia pomysłu na aplikację z uwzględnieniem istniejących
+                        problemów, które będzie rozwiązywała
+                    </p>
+                    <p>
+                        Wybór tematu
+                    </p>
+                </div>
+
+                <div class="cron-img">
+                    <img src="1.png" alt="img">
+                </div>
+            </div>
+            <div class="cron-item">
+                <div class="cron-info">
+                    <h1>Termin 2</h1>
+                    <h2>03.01.2022</h2>
+
+                    <p>
+                        Omówienie możliwych technologii do wykonania aplikacji.
+                    </p>
+                    <p>
+                        Znalezienie grupy docelowej.
+                    </p>
+                    <p>
+                        Przydzielenie pierwszych zadań.
+                    </p>
+
+                </div>
+                <div class="cron-img">
+                    <img src="2.jpg" alt="img">
+                </div>
+            </div>
+            <div class="cron-item">
+                <div class="cron-info">
+                    <h1>Termin 3</h1>
+                    <h2>04.02.2022</h2>
+                    <p>Testowanie ograniczeń technologicznych projektów w zależności od metodyki podejścia do zagadnienia.</p>
+                    <p>Wybranie technologii odpowiadającej potrzebom aplikacji. </p>
+                    <p>Ustalenie zadań na kolejny okres.</p>
+                </div>
+                <div class="cron-img">
+                    <img src="3.jpg" alt="img">
+                </div>
+            </div>
+            <div class="cron-item">
+                <div class="cron-info">
+                    <h1>Termin 4</h1>
+                    <h2>05.03.2022</h2>
+                    <p>Pierwsze testy zbudowanej aplikacji dla podstawowych gestów.</p>
+                    <p>Omówienie wniosków dotyczących problemów z dokładnością odczytu gestów i mapowania szkieletu.</p>
+                    <p>Rozpisanie zadań na dalsze uczenie z innymi parametrami.</p>
+                    <p>Omówienie przygotowanej strony internetowej.</p>
+                    <p>Testowanie przygotowanych aplikacji w różnych warunkach.</p>
+                    <p>Wybór najlepszych ustawień.</p>
+                    <p>Rozpoznanie potrzeb klienta do wytrenowania modelu sieci neuronowej.</p>
+                    <p>Omówienie sposobu hostowania aplikacji.</p>
+                </div>
+                <div class="cron-img">
+                    <img src="4.jpg" alt="img">
+                </div>
+            </div>
+            <div class="cron-item">
+                <div class="cron-info">
+                    <h1>Termin 5</h1>
+                    <h2>06.05.2022</h2>
+                    <p>Przygotowanie prezentacji aplikacji.</p>
+                    <p>Przygotowanie dokumentacji (wymogi techniczne, profil klienta itd.).</p>
+                    <p>Omówienie zadań podczas prezentacji.</p>
+
+                </div>
+                <div class="cron-img">
+                    <img src="5.jpg" alt="img">
+                </div>
+            </div>
         </div>
-        <div class="cron-item">
-          <div class="cron-info">
-            <h1>Termin 3</h1>
-            <h2>04.02.2022</h2>
-            <p>Dalsze prace nad aplikacją</p>
-          </div>
-          <div class="cron-img">
-            <img src="https://cdn.pixabay.com/photo/2016/07/13/23/09/work-1515801_960_720.jpg" alt="img">
-          </div>
-        </div>
-        <div class="cron-item">
-          <div class="cron-info">
-            <h1>Termin 4</h1>
-            <h2>05.03.2022</h2>
-            <p>Jeszcze dalsze prace nad aplikacją</p>
-          </div>
-          <div class="cron-img">
-            <img src="https://cdn.pixabay.com/photo/2016/07/13/23/09/work-1515801_960_720.jpg" alt="img">
-          </div>
-        </div>
-        <div class="cron-item">
-          <div class="cron-info">
-            <h1>Termin 5</h1>
-            <h2>06.04.2022</h2>
-            <p>Ostatnie dopracowanie projektu, konsulatacje z opiekunek zespołu</p>
-          </div>
-          <div class="cron-img">
-            <img src="https://cdn.pixabay.com/photo/2016/07/13/23/09/work-1515801_960_720.jpg" alt="img">
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Cron -->
-  
-  <hr/>
+</section>
+<!-- Cron -->
+<!-- Documentation -->
 
-     <!-- Documentation -->
-     <section id="docs">
-        <div class="docs container">
+<section class="bg-cream" id="project2">
+    <div class="project2 container" >
+        <div class="section-title" style="color: #fff"><h1>Dokumentacja <span>aplikacji</span></h1></div>
+        <div class="project2-items">
+            <div class="project2-item"><h3>Opis aplikacji</h3><p>Umożliwienie komunikacji pomiędzy osobą głuchoniemą, a osobą nie znającą języka migowego. W naszej aplikacji skupiliśmy się na umożliwieniu rozmowy pomiędzy osobą w dziekanacie, a studentem.</p></div>
+            <div class="project2-item">
+			<H3>Wymagania</h3>
+			<p> - Środowisko: Windows 7+, Linux, MacOs
+			<br> - Kamera minimum 420p
+            <br> - CPU minimalny: AMD Ryzen 7 4800H
+            <br> - Ram: 2400 MHz 8GB
+            <br> - GPU minimalna: zintegrowana
+            <br> - HDD: 5GB
+            <br> - Nie wymagane podłączenie do sieci</p></div>
+			  <div class="project2-item"><H3>Licencja</h3><p>Demoware - wersja o ograniczonej funkcjonalności w stosunku do wersji pełnej. Do uzyskania pełnej wersji prosimy o kontakt przez formularz u dołu strony.</p>
+		</div>
+        
+        <div class="project2-item"><H3>Profil klienta docelowego</h3><p>Naszym profilem klienta jest każde biuro bezpośredniej obsługi klienta, które w obsłudze posiada użytkowników głuchoniemych</p>
+		<p>Aplikacja służy wsparciu pracownikom biura w sytuacjach obsługi osoby z problemem mowy posługującej się językiem migowym.</p></div>
+		<div class="project2-item"><H3>Wykorzystane biblioteki</h3><p> OpenCV, Tensorflow, Keras, SK_Learn, MediaPipe, Numpy</p></div>
+ 		<div class="project2-item"><H3>Schemat architektury</h3>
+		<p><a href="scheme.png" taget="_blank">Zobacz schemat</a></p>
+		</div>
+	</div>
+    </div>
+</section>
+<!-- END Documentation -->
+<!-- File -->
+<section class="bg-white" id="docs" >
+    <div class="docs container">
         <div class="col-right">
-            <div class="section-title"><h1>Do <span>pobrania</span></h1></div>
-            <h2>Aplikacja</h2>
-             <p>Poniżej znajdują się paczki do pobrania aplikacji
-            </p>
-            <a href="./plik.zip" class="cta" target="_blank">Pobierz</a>
+            <div class="section-title" style="color:rgb(0, 0, 0)"><h1>Tutaj <span>pobierzesz </span></h1></div>
+            <h2 style="color:rgb(0, 0, 0)">Aplikację</h2>
+            <a href="./BeHeard.zip" target="_blank"><button class="btn"><i class="fa fa-download"></i> Pobierz wersję demonstracyjną</button></a>
         </div>
+    </div>
+</section>
+<!-- END File -->
+<!-- Contact -->
+<section class="bg-black" id="contact">
+        <div class="contact container">
+            <div class="section-title" style="color: #fff"><h1>Skontaktuj się <span>z nami</span></h1></div>
+	<form class="form" id="contactForm" method="post" novalidate action="/send-script.php">
+    <div class="form-row">
+        <label for="field-name">Imię</label>
+        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+    </div>
+    <div class="form-row">
+        <label for="field-email">Email</label>
+        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+    </div>
+    <div class="form-row">
+        <label for="field-message">Wiadomość</label>
+        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+    </div>
+    <div class="form-row">
+        <label class="checkbox-cnt">
+            <input type="checkbox" required data-error="Musisz wypełnić pole" name="regulation">
+            <i class="state" aria-hidden="true"></i>
+            <span>Wyrażam zgodę na kontakt drogą elektroniczną na mój adres e-mail.</span>
+        </label>
+    </div>
+    <div class="form-row">
+        <button type="submit" class="submit-btn">
+            Wyślij
+        </button>
+    </div>
+</form>          <div class="contact-bottom">
+                <div class="contact-item"><a href="mailto:biuro@beheard.pl"><img src="ma.png"></a></div>
+                <div class="contact-item"><a href=""><img src="ph.png"></a></div>
+                <div class="contact-item"><a href="mat.umk.pl"><img src="fb.png"></a></div>
+            </div>
+        
         </div>
-    </section>
-    <!-- Documentation -->
     
-    <hr/>
+</section>
+<!-- Contact -->
+<script>
+    $(function() {
+        var $inputs = $('form input[required], form textarea[required], select[required]');
 
+        var displayFieldError = function($elem) {
+            var $fieldRow = $elem.closest('.form-row');
+            var $fieldError = $fieldRow.find('.field-error');
+            if (!$fieldError.length) {
+                var errorText = $elem.attr('data-error');
+                var $divError = $('<div class="field-error">' + errorText + '</div>');
+                $fieldRow.append($divError);
+            }
+        };
 
-    
+        var hideFieldError = function($elem) {
+            var $fieldRow = $elem.closest('.form-row');
+            var $fieldError = $fieldRow.find('.field-error');
+            if ($fieldError.length) {
+                $fieldError.remove();
+            }
+        };
 
-<hr/>
-    
+        $inputs.on('input', function() {
+            var $elem = $(this);
+            if (!$elem.get(0).checkValidity()) {
+                $elem.addClass('error');
+            } else {
+                $elem.removeClass('error');
+                hideFieldError($elem);
+            }
+        });
+
+        $inputs.filter(':checkbox').on('click', function() {
+            var $elem = $(this);
+            var $row = $(this).closest('.form-row');
+            if ($elem.is(':checked')) {
+                $elem.removeClass('error');
+                hideFieldError($elem);
+            } else {
+                $elem.addClass('error');
+            }
+        });
+
+        var checkFieldsErrors = function() {
+            //ustawiamy zmienną na true. Następnie robimy pętlę po wszystkich polach
+            //jeżeli któreś z pól jest błędne, przełączamy zmienną na false.
+            var fieldsAreValid = true;
+            $inputs.each(function(i, elem) {
+                var $elem = $(elem);
+                //if (new RegExp(pattern).test($elem.val())) {
+                if (elem.checkValidity()) {
+                    hideFieldError($elem);
+                    $elem.removeClass('error');
+                } else {
+                    displayFieldError($elem);
+                    $elem.addClass('error');
+                    fieldsAreValid = false;
+                }
+            });
+            return fieldsAreValid;
+        };
+
+        $('.form').on('submit', function(e) {
+            e.preventDefault();
+
+            var $form = $(this);
+
+            if (checkFieldsErrors()) {
+                var dataToSend = $form.serializeArray();
+                dataToSend = dataToSend.concat(
+                    $form.find('input:checkbox:not(:checked)').map(function() {
+                        return {"name": this.name, "value": this.value}
+                    }).get()
+                );
+
+                var $submit = $form.find(':submit');
+                $submit.prop('disabled', 1);
+                $submit.addClass('element-is-busy');
+
+                $.ajax({
+                    url : $form.attr('action'),
+                    method: $form.attr('method'),
+                    dataType : 'json',
+                    data : dataToSend,
+                    success: function(ret) {
+                        if (ret.errors) {
+                            ret.errors.map(function(el) {
+                                return '[name="'+el+'"]'
+                            });
+                            checkFieldsErrors($form.find(ret.errors.join(',')));
+                        } else {
+                            if (ret.status=='ok') {
+                                $form.replaceWith('<div class="form-send-success"><strong>Wiadomość została wysłana</strong><span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span></div>');
+                            }
+                            if (ret.status=='error') {
+                                $submit.after('<div class="send-error">Wysłanie wiadomości się nie powiodło</div>');
+                            }
+                        }
+                    },
+                    error : function() {
+                        console.error('Wystąpił błąd z połączeniem');
+                    },
+                    complete: function() {
+                        $submit.prop('disabled', 0);
+                        $submit.removeClass('element-is-busy');
+                    }
+                });
+            }
+        })
+    })
+</script>
 <script src="./app.js"></script>
 
 <script>
-  var preloader = document.getElementById("loading");
-  function myFunction(){
-    preloader.style.display = 'none';
-  };
+    var preloader = document.getElementById("loading");
+
+    function myFunction() {
+        preloader.style.display = 'none';
+    };
 </script>
- </body>
+</body>
 </html>
